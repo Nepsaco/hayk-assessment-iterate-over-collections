@@ -24,10 +24,7 @@ companies = [
 ### Your code below this
 
 def company_string(arr)
-    company_stats = []
-    arr.each do |company|
-        company_stats << company.name_size
-    end
+    company_stats = arr.each{ |company| company_stats << company.name_size}
     company_stats
 end
 
